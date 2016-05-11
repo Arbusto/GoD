@@ -1,0 +1,9 @@
+<div class="css-game-container" layout="column" layout-wrap layout-align="start center">
+	<h1 layout-margin>{{ gameHeader.text }}</h1>
+	<span ng-show="score.player1.name" class="score">{{ score.player1.name }}: {{score.player1.victories}} of {{score.player1.neededRounds}}</span>
+	<span ng-show="score.player2.name" class="score">{{ score.player2.name }}: {{score.player2.victories}} of {{score.player2.neededRounds}}</span>
+		<ui-view></ui-view>
+	</form>
+	<md-button class="md-raised" ng-click="nextButton.action()" ng-hide="nextButton.disabled" ng-disabled="nextButton.disabled"> {{nextButton.text}} </md-button>
+	<md-button class="md-raised" ng-click="quitButton.action()" ng-show="quitButton.show" > {{quitButton.text}} </md-button>
+</div>

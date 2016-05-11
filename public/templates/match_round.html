@@ -1,0 +1,24 @@
+<div class="css-game-box"  >
+	<div ng-if="roundWinner.victor" layout="column" layout-align="center center" layout-padding>
+		<span class="">
+			{{ roundWinner.winningMove }} beats {{ roundWinner.losingMove }}.
+		</span>
+		<span>
+			So this round winner is {{ roundWinner.victor.name}}!
+		</span>
+		<span>
+			Just {{ roundWinner.remainigWins }} more rounds to Total Victory!
+		</span>
+	</div>
+	<div ng-if="!roundWinner.victor" layout="column" layout-align="center center" layout-padding>
+		<span class="">
+			{{ roundWinner.winningMove }} clashed against {{ roundWinner.losingMove }}.
+		</span>
+		<span>
+			No winner emerged.
+		</span>
+		<span>
+			The battle rages on!
+		</span>
+	</div>
+</div>

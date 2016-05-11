@@ -1,0 +1,44 @@
+.css-title-container {
+	width: 100%;
+	height: 100%;
+}
+
+.css-add-move-button{
+	height: 50%;
+}
+
+.css-options-move{
+	align-items: baseline;
+}
+
+.css-options-move-name {
+	min-width: 100px;
+	margin-bottom: 30px;
+
+}
+
+.css-moves-defeats-text {
+	color: #6F0101;
+	font-size: 12px;
+}
+
+.css-options-move-defeats {
+	margin-bottom: 30px;
+}
+
+.css-options-move-input {
+	border-radius: 6px;
+	border: 1px solid;
+	padding: 6px;
+}
+/*.css-title-menu{
+	border: 1px solid;
+	border-radius: 3px;
+
+}
+
+.css-game-box{
+	border: 1px solid;
+	border-radius: 3px;
+
+}*/

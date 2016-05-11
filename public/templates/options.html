@@ -1,0 +1,27 @@
+<div class="css-options-container" layout="column" layout-wrap layout-align="start center">
+	<h1 layout-margin>{{ optionsHeader.text }}</h1>
+
+	<h3>Moves</h3>
+	<form  layout="row" name="addMove">
+		<md-input-container>
+			<label>Name</label>
+			<input type="text" ng-model="newMove.name" required>
+		</md-input-container>
+		<md-button class="css-add-move-button md-raised" ng-disabled="addMove.$invalid" ng-click="addMoveButton.action()"> {{ addMoveButton.text }} </md-button>
+	</form>
+	<div class="css-options-move" layout="row" layout-margin layout-padding>Drag & Drop</div>
+
+	<div class="css-options-move" layout="row" ng-repeat="(key,move) in moves">
+	  	<div flex class="css-options-move-name" draggable>{{ move.name }}</div>
+		<div class="css-moves-defeats-text" flex>defeats</div>
+	  	<div flex class="css-options-move-defeats">
+	  		<input class="css-options-move-input" droppable ondragenter="return false;" ondragover="return false;" type="text" ng-model="move.defeats">
+		</div>
+	</div>
+
+	<div class="" layout="row" layout-wrap layout-align="cener center">
+		<md-button class="md-raised" ng-click="saveButton.action()"> {{ saveButton.text }} </md-button>
+		<md-button class="md-raised" ng-click="restoreButton.action()"> {{ restoreButton.text }} </md-button>
+		<md-button class="md-raised" ng-click="quitButton.action()"> {{ quitButton.text }} </md-button>
+	</div>
+</div>

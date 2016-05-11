@@ -1,0 +1,6 @@
+<div class="css-game-box"  layout="column" layout-padding layout-align="center center">
+	<md-select ng-show="showSelection" ng-model="selectedMove"  placeholder="Select a move">
+    	<md-option ng-value="key" ng-repeat="(key,move) in moves">{{ move.name }}</md-option>
+  	</md-select>
+	<md-button class="md-raised" ng-show="confirmButton.show" ng-disabled="!selectedMove" ng-click="confirmButton.action(selectedMove);selectedMove = null"> {{confirmButton.text}} </md-button>
+</div>
